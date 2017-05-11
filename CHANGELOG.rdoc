@@ -1,3 +1,7 @@
+== 1.0.0 (May 2017)
+
+* Forked and upgraded to capistrano v3
+
 == 0.1.0 (October 1, 2012)
 
 * Refactored code
