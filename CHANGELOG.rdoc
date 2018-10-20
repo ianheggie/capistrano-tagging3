@@ -1,3 +1,7 @@
+== 2.0.0 (October 2018)
+
+*   Execute before cleanup to support custom deploy tasks
+
 == 1.0.0 (May 2017)
 
 * Forked and upgraded to capistrano v3
