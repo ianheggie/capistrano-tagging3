@@ -1,6 +1,6 @@
 namespace :tagging3 do
   set :tagging3_format, ':rails_env_:release'
-  
+
   def fetch_or_send(method)
     fetch method, respond_to?(method) ? send(method) : nil
   end
@@ -56,6 +56,6 @@ namespace :tagging3 do
   end
 end
 
-after  'deploy:restart', 'tagging3:deploy'
+before  'tagging3:cleanup', 'tagging3:deploy'
 before 'deploy:cleanup', 'tagging3:cleanup'
 
